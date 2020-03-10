@@ -12,6 +12,6 @@ To start fuzz testing, run
 	go get github.com/dvyukov/go-fuzz/go-fuzz
 	go get github.com/dvyukov/go-fuzz/go-fuzz-build
 
-	go-fuzz-build aqwari.net/net/styx/styxproto
+	go-fuzz-build github.com/go9p/styx/styxproto
 	go-fuzz -bin=./styxproto-fuzz.zip
 

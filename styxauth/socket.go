@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"syscall"
 
-	"aqwari.net/net/styx"
+	"github.com/go9p/styx"
 )
 
 var (

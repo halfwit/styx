@@ -3,7 +3,7 @@ package sys
 import (
 	"os"
 
-	"aqwari.net/net/styx/styxproto"
+	"github.com/go9p/styx/styxproto"
 )
 
 // DefaultUid and DefaultGid are the default group and owner for a file if

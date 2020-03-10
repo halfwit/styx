@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"aqwari.net/net/styx/internal/qidpool"
-	"aqwari.net/net/styx/styxproto"
+	"github.com/go9p/styx/internal/qidpool"
+	"github.com/go9p/styx/styxproto"
 )
 
 func compare(t *testing.T, file Interface, offset int64, want string) {

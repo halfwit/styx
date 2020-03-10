@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"aqwari.net/net/styx"
+	"github.com/go9p/styx"
 )
 
 type emptyDir struct{}

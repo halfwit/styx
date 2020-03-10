@@ -7,9 +7,9 @@ import (
 	"path"
 	"sync"
 
-	"aqwari.net/net/styx/internal/qidpool"
-	"aqwari.net/net/styx/internal/sys"
-	"aqwari.net/net/styx/styxproto"
+	"github.com/go9p/styx/internal/qidpool"
+	"github.com/go9p/styx/internal/sys"
+	"github.com/go9p/styx/styxproto"
 )
 
 // ErrSmallRead is returned when a client's Tread request on

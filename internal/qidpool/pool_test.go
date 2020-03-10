@@ -3,7 +3,7 @@ package qidpool
 import (
 	"testing"
 
-	"aqwari.net/net/styx/styxproto"
+	"github.com/go9p/styx/styxproto"
 )
 
 func TestQidpool(t *testing.T) {

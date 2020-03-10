@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"aqwari.net/net/styx/internal/util"
+	"github.com/go9p/styx/internal/util"
 	"aqwari.net/retry"
 )
 

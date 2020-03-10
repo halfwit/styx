@@ -1,6 +1,6 @@
 package util_test
 
-import "aqwari.net/net/styx/internal/util"
+import "github.com/go9p/styx/internal/util"
 
 type Session struct {
 	util.RefCount

@@ -5,7 +5,7 @@ package tracing
 import (
 	"io"
 
-	"aqwari.net/net/styx/styxproto"
+	"github.com/go9p/styx/styxproto"
 )
 
 // A Func can be used to access 9P messages as they
