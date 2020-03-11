@@ -44,6 +44,7 @@ func (m *Map) Put(key, val interface{}) {
 func (m *Map) Add(key, val interface{}) bool {
 	m.mu.Lock()
 	defer m.mu.Unlock()
+
 	if _, ok := m.values[key]; ok {
 		return false
 	}

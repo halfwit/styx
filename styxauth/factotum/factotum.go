@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"aqwari.net/net/styx"
+	"github.com/go9p/styx"
 )
 
 const (
