@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"os"
 
 	"aqwari.net/net/styx"
 )
@@ -149,7 +150,15 @@ func Start(rpc func() (io.ReadWriteCloser, error), proto string) (styx.AuthFunc,
 		return nil
 	}
 	aof := func() (interface{}, error) {
-		f, err := rpc()
+		var f io.ReadWriteCloser
+		var err error
+
+		if rpc == nil {
+			f, err = os.OpenFile("/mnt/factotum/rpc", os.O_RDWR, 0755)
+		} else {
+			f, err = rpc()
+		}
+
 		if err != nil {
 			return nil, err
 		}
